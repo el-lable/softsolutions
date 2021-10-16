@@ -1,0 +1,90 @@
+html,
+body{
+	height: 100%;
+}
+body{
+	background:var(--white);
+}
+
+/* main grid */
+#wrap_outer{
+	display:flex;
+	overflow:hidden;
+	width:1500px;
+	max-width:100%;
+	min-height:100%;
+	margin:0 auto;
+}
+#wrap{
+	position:relative;
+	display:flex;
+	flex-direction:column;
+	justify-content:space-between;
+	box-sizing:border-box;
+	width:940px;
+	max-width:100%;
+	min-height:100%;
+	margin:0 auto;
+	
+	> section,
+	> div{
+		box-sizing:border-box;
+	}
+	#header{
+		
+	}
+	#content{
+		
+	}
+	#footer{
+		margin-top:auto;
+	}
+}
+
+
+#content{
+	/* content elements */
+	> ul,
+	> ul > li{
+		display:block;
+		list-style:none;
+	}
+	> ul > li{
+		position:relative;
+		padding-left:1em;
+		
+		&:before{
+			content:"";
+			position:absolute;
+			left:0;
+			top:0.6em;
+			width:5px;
+			height:5px;
+			background:var(--primary);
+		}
+	}
+	ol{
+		margin-left:1em;
+	}
+	
+	/* content blocks */
+	#intro:first-child:before{
+		top:-220px;
+	}
+	.about{
+		
+	}
+	.service{
+		
+	}
+	.presentation{
+		margin-bottom:114px;
+	}
+	.testimonials{
+		margin:96px 0 136px;
+	}
+	.contacts{
+		
+	}
+}
+

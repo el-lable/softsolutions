@@ -1,0 +1,53 @@
+*{
+	margin:0;
+	padding:0;
+	outline:none;
+	border:0;
+	font:18px/1.333em 'Open Sans','Helvetica','Times New Roman', sans-serif;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section {
+	display:block;
+}
+audio,
+canvas,
+video {
+	display:inline-block;
+}
+audio:not([controls]) {
+	display:none;
+}
+html {
+	font-size:100%;
+	text-size-adjust:100%;
+}
+html, body{
+	height:100%;
+}
+html.no_scroll,
+body.no_scroll{
+	overflow:hidden;
+	max-height:100%;
+}
+img{
+	border:none;
+}
+input::-moz-focus-inner{
+	padding:0;
+	margin:0;
+	border:none;
+}
+input[type="submit"]{
+	-webkit-appearance: none;
+}
+body{
+	
+}

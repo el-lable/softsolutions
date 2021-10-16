@@ -1,0 +1,45 @@
+/*   
+Theme Name: Claymore
+Theme URI: https://Claymore.com/
+Description: Claymore
+Author: el-lable
+Author URI: http://el-lable.ru
+Author E-mail: el@el-lable.ru
+Version: 1.0
+*/
+
+@import url('css/style.min.css');
+
+#header .menu{
+	display:flex;
+}
+#footer div{
+	color:inherit;
+	font:inherit;
+}
+#content header br,
+#content .description br{
+	margin:0;
+}
+.contacts form br,
+.contacts form .wpcf7-spinner,
+.contacts form .wpcf7-not-valid-tip,
+.contacts form .wpcf7-response-output{
+	display:none !important;
+}
+.contacts form p input[type^="te"],
+.contacts form p input[type="email"]{
+	width:100%;
+}
+.contacts form p .wpcf7-not-valid{
+	border-color:#f33;
+}
+.wp-pagenavi{
+	margin:40px 0;
+}
+@media only screen and (max-width:960px){
+	#header .widget_nav_menu{
+		display:none;
+	}
+}
+
