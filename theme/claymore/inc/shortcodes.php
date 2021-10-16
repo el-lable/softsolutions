@@ -101,6 +101,7 @@ function show_presentation() {
 // [testimonials]
 function show_testimonials( $atts ) {
 	$atts = shortcode_atts( [
+		'title' => 'What People Say',
 		'count' => 6
 	], $atts );
 
@@ -117,7 +118,7 @@ function show_testimonials( $atts ) {
 	ob_start();
 ?>
 <section class="testimonials">
-	<?php if( !empty( $atts['title'] ) ) { ?><header><h2><?php echo $item['title']; ?></h2></header><?php } ?>
+	<?php if( !empty( $atts['title'] ) ) { ?><header><h2><?php echo $atts['title']; ?></h2></header><?php } ?>
 	<ul>
 		<?php foreach( $posts as $post ) { ?>
 			<li>

@@ -10,8 +10,26 @@ Version: 1.0
 
 @import url('css/style.min.css');
 
+#header .widget_nav_menu,
+#header .widget_nav_menu div,
+#header .widget_nav_menu ul{
+	height:100%;
+}
 #header .menu{
 	display:flex;
+}
+#header .menu li[class*="current"]{
+	position:relative;
+}
+#header .menu li[class*="current"]:after{
+	content:"";
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:2px;
+	margin:0 8px;
+	background:var(--primary);
 }
 #footer div{
 	color:inherit;
